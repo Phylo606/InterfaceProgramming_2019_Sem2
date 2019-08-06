@@ -1,3 +1,4 @@
+"use strict";
 var TodoItem = /** @class */ (function () {
     function TodoItem(title) {
         this.title = title;
