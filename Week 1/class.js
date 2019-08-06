@@ -10,11 +10,7 @@ var Car1 = new car("Ford", "Focus");
 var Car2 = new car("Toyota", "Corolla");
 var Car3 = new car("Honda", "Civic");
 var brands = [Car1, Car2, Car3];
-var arrayLength = brands.length;
-for (var i = 0; i < arrayLength; i++) {
-    console.log(brands[i]);
-    //Do something
-}
+brands.forEach(function (item) { return console.log(item); });
 //console.log(brands);
 //Lochie's example
 /*
