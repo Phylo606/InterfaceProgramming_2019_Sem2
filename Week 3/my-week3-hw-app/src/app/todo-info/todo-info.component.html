@@ -1,5 +1,9 @@
-<p>todo-info works!</p>
+<!--<p>todo-info works!</p>-->
 <div>
-    <h6>{{item.title}}</h6>
+    <h4>{{item.title}}</h4>
     <p>{{item.completed}}</p>
+</div>
+<div>
+    <label>Add an item: <input #newItem></label>
+    <button (click)="addNewItem(newItem.value)">Add to parent's list</button>
 </div>
