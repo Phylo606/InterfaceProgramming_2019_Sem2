@@ -1,0 +1,1 @@
+Look into 2 dimensional array and display: inline-block
