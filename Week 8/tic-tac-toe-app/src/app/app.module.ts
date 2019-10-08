@@ -1,15 +1,20 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import {BoardComponent} from './board.component';
-import {CellComponent} from './cell.component';
+import { BoardComponent } from './board/board.component';
+import { CellComponent } from './board/cell/cell.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, BoardComponent, CellComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [
+    AppComponent,
+    BoardComponent,
+    CellComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

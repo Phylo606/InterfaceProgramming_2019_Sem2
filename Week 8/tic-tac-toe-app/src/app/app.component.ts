@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {my-board} from 'board.component.ts';
 
 @Component({
   selector: 'app-root',
