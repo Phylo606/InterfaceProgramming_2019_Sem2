@@ -1,0 +1,9 @@
+<p>postdisplay works!</p>
+
+<button (click)="postReload()">Refresh Posts</button>
+Loading: {{ postsService.loading }}
+<ul>
+    <li *ngFor="let Post of postsService.posts">
+        {{ Post.title }}
+    </li>
+</ul>

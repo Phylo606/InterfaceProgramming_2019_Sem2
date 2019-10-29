@@ -7,15 +7,20 @@ import { Post }  from './post'
 })
 export class PostsService {
 
+  loading = false;
   constructor(private http: HttpClient) { }
   
-  postsUrl = 'https://jsonplaceholder.typicode.com/posts(https://jsonplaceholder.typicode.com/posts)';
+  postsUrl = 'https://jsonplaceholder.typicode.com/posts';
   
   getPosts() {
-    return this.http.get(this.postsUrl)
+    this.loading = true;
+    this.http.get<Post[]>(this.postsUrl).subscribe((data)=>{
+      this.posts = data;
+      this.loading = false;
+    })
   }
 
-  posts: [Post];
+  posts: Post[] = [];
 }
 
 
