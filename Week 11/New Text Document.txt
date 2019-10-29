@@ -1,0 +1,1 @@
+fix error when creating new apps by using this line: "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
