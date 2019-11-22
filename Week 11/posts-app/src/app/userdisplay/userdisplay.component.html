@@ -1,0 +1,9 @@
+<p>userdisplay works!</p>
+
+<button (click)="userReload()">Refresh Users</button>
+Loading: {{ usersService.usersloading }}
+<ul>
+    <li *ngFor="let User of usersService.users">
+        {{ User.username }}
+    </li>
+</ul>

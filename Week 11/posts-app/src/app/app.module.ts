@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostdisplayComponent } from './postdisplay/postdisplay.component';
+import { UserdisplayComponent } from './userdisplay/userdisplay.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostdisplayComponent
+    PostdisplayComponent,
+    UserdisplayComponent
   ],
   imports: [
     BrowserModule,
